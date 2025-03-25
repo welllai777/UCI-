@@ -4,7 +4,7 @@ import pandas as pd
 import pandas as pd
 
 # 指定文件路径
-file_path = r"C:\Users\HP2\Desktop\cleaned_data.csv"  # 使用原始字符串（r"..."）防止转义问题
+file_path = r"你的数据文件本地地址"  # 使用原始字符串（r"..."）防止转义问题
 
 # 读取 CSV 文件
 df = pd.read_csv(file_path)
@@ -58,6 +58,6 @@ final_columns = [
 df = df[final_columns]
 
 # 保存清理后的数据
-output_path = r"C:\Users\HP2\Desktop\cleaned_transformed_data.csv"
+output_path = r"你所希望输出文件保存的地址"
 df.to_csv(output_path, index=False, encoding="utf-8-sig")  # 确保编码正确
 print(f"数据清理完成，已保存至 {output_path}")
